@@ -1,0 +1,206 @@
+@import url(../assets/fonts/Metropolis-Regular.otf);
+@import url(../assets/fonts/Metropolis-ExtraBold.otf);
+@font-face {
+  font-family: mainFont;
+  src: url(../assets/fonts/Metropolis-Regular.otf);
+}
+
+@font-face {
+  font-family: boldFont;
+  src: url(../assets/fonts/Metropolis-ExtraBold.otf);
+}
+
+:root {
+  --quartz: #23d4ce;
+  --quartezLight: #23d4ce44;
+  --gray: #F7F7F7;
+  --darkGray: #333333;
+}
+
+.text-quartz {
+  color: var(--quartz);
+}
+
+.bg-quartz {
+  background-color: var(--quartz);
+}
+
+.bg-gray {
+  background-color: var(--gray);
+}
+
+.bg-mydark {
+  background-color: var(--darkGray);
+}
+
+.boldFont {
+  font-family: boldFont;
+  font-weight: 700;
+}
+
+* {
+  font-family: mainfont;
+}
+
+.myNav {
+  background-image: url(../assets/images/frontback.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lang {
+  cursor: pointer;
+}
+
+.holder {
+  height: 88vh;
+  z-index: -1;
+}
+
+.holder img {
+  height: 91vh;
+}
+
+.inner {
+  height: 76vh;
+}
+
+@media (max-width: 778px) {
+  .inner {
+    height: auto;
+  }
+}
+
+.v-dots {
+  top: 35%;
+  left: 1%;
+}
+
+.gradient {
+  background: radial-gradient(farthest-side at 50% 50%, var(--quartezLight), transparent);
+}
+
+@media (max-width: 676.98px) {
+  .gradient {
+    display: none;
+  }
+}
+
+.font-modefier {
+  font-size: large !important;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .font-modefier {
+    text-shadow: 2px 2px #727272;
+  }
+}
+
+.phone {
+  margin-top: 90px;
+}
+
+.shadow {
+  -webkit-box-shadow: 5px 5px var(--gray);
+          box-shadow: 5px 5px var(--gray);
+}
+
+.navbar, .nav-bar {
+  background-image: url(../assets/images/frontback.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.costum-radius {
+  border-radius: 0 0 150px 150px;
+  -webkit-border-radius: 0 0 150px 150px;
+  -moz-border-radius: 0 0 150px 150px;
+  -ms-border-radius: 0 0 150px 150px;
+  -o-border-radius: 0 0 150px 150px;
+}
+
+.ourFeature {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.ourFeature::after {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  content: "";
+  width: 70px;
+  height: 5px;
+  background-color: var(--quartz);
+}
+
+.showMe {
+  transition: all 0.5s ease-in-out;
+  opacity: 1 !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+#p1 {
+  top: 14%;
+  left: 18%;
+  cursor: pointer;
+}
+
+#p2 {
+  top: 61%;
+  left: 26%;
+  cursor: pointer;
+}
+
+#p3 {
+  top: 46%;
+  left: 48%;
+  cursor: pointer;
+}
+
+#p4 {
+  top: 15%;
+  left: 57%;
+  cursor: pointer;
+}
+
+#p5 {
+  top: 30%;
+  left: 69%;
+  cursor: pointer;
+}
+
+#p6 {
+  top: 70%;
+  left: 78%;
+  cursor: pointer;
+}
+
+@media (max-width: 992.98px) {
+  .navbar-bar {
+    background-image: url(../assets/images/frontback.png);
+    background-repeat: no-repeat;
+  }
+  .holder {
+    background-image: url(../assets/images/frontback.png);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .v-dots {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  .navbar {
+    background-image: url(../assets/images/frontback.png);
+  }
+}
+/*# sourceMappingURL=mainstyle.css.map */
